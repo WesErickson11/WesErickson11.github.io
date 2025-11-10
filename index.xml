@@ -14,7 +14,7 @@
 <item>
   <title>How much pressure does a timeout add to a fieldgoal?</title>
   <dc:creator>Wes Erickson</dc:creator>
-  <link>https://your-website-url.example.com/posts/Fieldgoal-kicking-timeout-NFL-CFB/</link>
+  <link>https://your-website-url.example.com/posts/fieldgoal-kicking-timeout-nfl-cfb/</link>
   <description><![CDATA[ 
 
 
@@ -49,9 +49,8 @@ font-style: inherit;">library</span>(tidyverse)</span></code></pre></div></div>
   <category>football</category>
   <category>kicking</category>
   <category>lowercaseword</category>
-  <guid>https://your-website-url.example.com/posts/Fieldgoal-kicking-timeout-NFL-CFB/</guid>
+  <guid>https://your-website-url.example.com/posts/fieldgoal-kicking-timeout-nfl-cfb/</guid>
   <pubDate>Tue, 04 Nov 2025 06:00:00 GMT</pubDate>
-  <media:content url="https://your-website-url.example.com/posts/Fieldgoal-kicking-timeout-NFL-CFB/image.png" medium="image" type="image/png"/>
 </item>
 </channel>
 </rss>
