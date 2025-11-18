@@ -191,6 +191,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <p>Many coaches call a timeout right before a kicker kicks a field-goal. Does this really do anything?</p>
+<p>In the NFL many games come down to the last minute and a team could only need a fieldgoal. At this point many coaches still have a timeout. So how does this affect a kicker can some do better and some do worse? Does this distance matter on the kick to determine how well a kicker might do?</p>
+<p>We need to find the data for fieldgoals and search through to see if there was a timeout called before. So we are going to use nflfastR package so we can go through the NFL play-by-play searching for the results that we want.</p>
 <div class="cell">
 <details class="code-fold">
 <summary>Code</summary>
@@ -490,23 +492,23 @@ The following object is masked from 'package:readr':
 <span id="cb19-51"><a href="#cb19-51" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output-display">
-<div id="rwklcgkhya" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#rwklcgkhya table {
+<div id="dsrxbogeky" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#dsrxbogeky table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#rwklcgkhya thead, #rwklcgkhya tbody, #rwklcgkhya tfoot, #rwklcgkhya tr, #rwklcgkhya td, #rwklcgkhya th {
+#dsrxbogeky thead, #dsrxbogeky tbody, #dsrxbogeky tfoot, #dsrxbogeky tr, #dsrxbogeky td, #dsrxbogeky th {
   border-style: none;
 }
 
-#rwklcgkhya p {
+#dsrxbogeky p {
   margin: 0;
   padding: 0;
 }
 
-#rwklcgkhya .gt_table {
+#dsrxbogeky .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -532,12 +534,12 @@ The following object is masked from 'package:readr':
   border-left-color: #D3D3D3;
 }
 
-#rwklcgkhya .gt_caption {
+#dsrxbogeky .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#rwklcgkhya .gt_title {
+#dsrxbogeky .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -549,7 +551,7 @@ The following object is masked from 'package:readr':
   border-bottom-width: 0;
 }
 
-#rwklcgkhya .gt_subtitle {
+#dsrxbogeky .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -561,7 +563,7 @@ The following object is masked from 'package:readr':
   border-top-width: 0;
 }
 
-#rwklcgkhya .gt_heading {
+#dsrxbogeky .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -573,13 +575,13 @@ The following object is masked from 'package:readr':
   border-right-color: #D3D3D3;
 }
 
-#rwklcgkhya .gt_bottom_border {
+#dsrxbogeky .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#rwklcgkhya .gt_col_headings {
+#dsrxbogeky .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -594,7 +596,7 @@ The following object is masked from 'package:readr':
   border-right-color: #D3D3D3;
 }
 
-#rwklcgkhya .gt_col_heading {
+#dsrxbogeky .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -614,7 +616,7 @@ The following object is masked from 'package:readr':
   overflow-x: hidden;
 }
 
-#rwklcgkhya .gt_column_spanner_outer {
+#dsrxbogeky .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -626,15 +628,15 @@ The following object is masked from 'package:readr':
   padding-right: 4px;
 }
 
-#rwklcgkhya .gt_column_spanner_outer:first-child {
+#dsrxbogeky .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#rwklcgkhya .gt_column_spanner_outer:last-child {
+#dsrxbogeky .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#rwklcgkhya .gt_column_spanner {
+#dsrxbogeky .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #000000;
@@ -646,11 +648,11 @@ The following object is masked from 'package:readr':
   width: 100%;
 }
 
-#rwklcgkhya .gt_spanner_row {
+#dsrxbogeky .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#rwklcgkhya .gt_group_heading {
+#dsrxbogeky .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -676,7 +678,7 @@ The following object is masked from 'package:readr':
   text-align: left;
 }
 
-#rwklcgkhya .gt_empty_group_heading {
+#dsrxbogeky .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -691,15 +693,15 @@ The following object is masked from 'package:readr':
   vertical-align: middle;
 }
 
-#rwklcgkhya .gt_from_md > :first-child {
+#dsrxbogeky .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#rwklcgkhya .gt_from_md > :last-child {
+#dsrxbogeky .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#rwklcgkhya .gt_row {
+#dsrxbogeky .gt_row {
   padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 5px;
@@ -718,7 +720,7 @@ The following object is masked from 'package:readr':
   overflow-x: hidden;
 }
 
-#rwklcgkhya .gt_stub {
+#dsrxbogeky .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -731,7 +733,7 @@ The following object is masked from 'package:readr':
   padding-right: 5px;
 }
 
-#rwklcgkhya .gt_stub_row_group {
+#dsrxbogeky .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -745,15 +747,15 @@ The following object is masked from 'package:readr':
   vertical-align: top;
 }
 
-#rwklcgkhya .gt_row_group_first td {
+#dsrxbogeky .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#rwklcgkhya .gt_row_group_first th {
+#dsrxbogeky .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#rwklcgkhya .gt_summary_row {
+#dsrxbogeky .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -763,16 +765,16 @@ The following object is masked from 'package:readr':
   padding-right: 5px;
 }
 
-#rwklcgkhya .gt_first_summary_row {
+#dsrxbogeky .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#rwklcgkhya .gt_first_summary_row.thick {
+#dsrxbogeky .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#rwklcgkhya .gt_last_summary_row {
+#dsrxbogeky .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -782,7 +784,7 @@ The following object is masked from 'package:readr':
   border-bottom-color: #D3D3D3;
 }
 
-#rwklcgkhya .gt_grand_summary_row {
+#dsrxbogeky .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -792,7 +794,7 @@ The following object is masked from 'package:readr':
   padding-right: 5px;
 }
 
-#rwklcgkhya .gt_first_grand_summary_row {
+#dsrxbogeky .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -802,7 +804,7 @@ The following object is masked from 'package:readr':
   border-top-color: #D3D3D3;
 }
 
-#rwklcgkhya .gt_last_grand_summary_row_top {
+#dsrxbogeky .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -812,11 +814,11 @@ The following object is masked from 'package:readr':
   border-bottom-color: #D3D3D3;
 }
 
-#rwklcgkhya .gt_striped {
+#dsrxbogeky .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#rwklcgkhya .gt_table_body {
+#dsrxbogeky .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -825,7 +827,7 @@ The following object is masked from 'package:readr':
   border-bottom-color: #D3D3D3;
 }
 
-#rwklcgkhya .gt_footnotes {
+#dsrxbogeky .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -839,7 +841,7 @@ The following object is masked from 'package:readr':
   border-right-color: #D3D3D3;
 }
 
-#rwklcgkhya .gt_footnote {
+#dsrxbogeky .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -848,7 +850,7 @@ The following object is masked from 'package:readr':
   padding-right: 5px;
 }
 
-#rwklcgkhya .gt_sourcenotes {
+#dsrxbogeky .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -862,7 +864,7 @@ The following object is masked from 'package:readr':
   border-right-color: #D3D3D3;
 }
 
-#rwklcgkhya .gt_sourcenote {
+#dsrxbogeky .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -870,72 +872,72 @@ The following object is masked from 'package:readr':
   padding-right: 5px;
 }
 
-#rwklcgkhya .gt_left {
+#dsrxbogeky .gt_left {
   text-align: left;
 }
 
-#rwklcgkhya .gt_center {
+#dsrxbogeky .gt_center {
   text-align: center;
 }
 
-#rwklcgkhya .gt_right {
+#dsrxbogeky .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#rwklcgkhya .gt_font_normal {
+#dsrxbogeky .gt_font_normal {
   font-weight: normal;
 }
 
-#rwklcgkhya .gt_font_bold {
+#dsrxbogeky .gt_font_bold {
   font-weight: bold;
 }
 
-#rwklcgkhya .gt_font_italic {
+#dsrxbogeky .gt_font_italic {
   font-style: italic;
 }
 
-#rwklcgkhya .gt_super {
+#dsrxbogeky .gt_super {
   font-size: 65%;
 }
 
-#rwklcgkhya .gt_footnote_marks {
+#dsrxbogeky .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#rwklcgkhya .gt_asterisk {
+#dsrxbogeky .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#rwklcgkhya .gt_indent_1 {
+#dsrxbogeky .gt_indent_1 {
   text-indent: 5px;
 }
 
-#rwklcgkhya .gt_indent_2 {
+#dsrxbogeky .gt_indent_2 {
   text-indent: 10px;
 }
 
-#rwklcgkhya .gt_indent_3 {
+#dsrxbogeky .gt_indent_3 {
   text-indent: 15px;
 }
 
-#rwklcgkhya .gt_indent_4 {
+#dsrxbogeky .gt_indent_4 {
   text-indent: 20px;
 }
 
-#rwklcgkhya .gt_indent_5 {
+#dsrxbogeky .gt_indent_5 {
   text-indent: 25px;
 }
 
-#rwklcgkhya .katex-display {
+#dsrxbogeky .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#rwklcgkhya div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#dsrxbogeky div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1099,6 +1101,7 @@ The following object is masked from 'package:readr':
 </div>
 </div>
 <p>Final chart that we are going to look at a bee swarm chart. When we look at this we are able to see that the pressure effects every kicker differently. When you look at the graph you are able to see guys like Tyler Bass and Daniel Carlson who kick at a 60% rate when a timeout is called on them.</p>
+<p>In the end we find that the longer the field goal gets the more the timeout seems to cause them to miss. We also find that some people take pressure better then others and finally that we need way more data if we really want a definitive answer on if “icing” the kicker does anything.</p>
 
 
 
