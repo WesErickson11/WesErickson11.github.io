@@ -22,7 +22,7 @@
 
 
 <p>Many coaches call a timeout right before a kicker kicks a field-goal. Does this really do anything?</p>
-<p>In the NFL many games come down to the last minute and a team could only need a fieldgoal. At this point many coaches still have a timeout. So how does this affect a kicker can some do better and some do worse? Does this distance matter on the kick to determine how well a kicker might do?</p>
+<p>In the NFL many games come down to the last minute and a team could only need a field goal. At this point many coaches still have a timeout. So how does this affect a kicker can some do better and some do worse? Does this distance matter on the kick to determine how well a kicker might do?</p>
 <p>We need to find the data for fieldgoals and search through to see if there was a timeout called before. So we are going to use nflfastR package so we can go through the NFL play-by-play searching for the results that we want.</p>
 <div class="cell">
 <details class="code-fold">
@@ -1321,23 +1321,23 @@ font-style: inherit;">3</span>)</span>
 <span id="cb19-51">  )</span></code></pre></div></div>
 </details>
 <div class="cell-output-display">
-<div id="dsrxbogeky" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#dsrxbogeky table {
+<div id="ucuouyxuma" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#ucuouyxuma table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#dsrxbogeky thead, #dsrxbogeky tbody, #dsrxbogeky tfoot, #dsrxbogeky tr, #dsrxbogeky td, #dsrxbogeky th {
+#ucuouyxuma thead, #ucuouyxuma tbody, #ucuouyxuma tfoot, #ucuouyxuma tr, #ucuouyxuma td, #ucuouyxuma th {
   border-style: none;
 }
 
-#dsrxbogeky p {
+#ucuouyxuma p {
   margin: 0;
   padding: 0;
 }
 
-#dsrxbogeky .gt_table {
+#ucuouyxuma .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -1363,12 +1363,12 @@ font-style: inherit;">3</span>)</span>
   border-left-color: #D3D3D3;
 }
 
-#dsrxbogeky .gt_caption {
+#ucuouyxuma .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#dsrxbogeky .gt_title {
+#ucuouyxuma .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -1380,7 +1380,7 @@ font-style: inherit;">3</span>)</span>
   border-bottom-width: 0;
 }
 
-#dsrxbogeky .gt_subtitle {
+#ucuouyxuma .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -1392,7 +1392,7 @@ font-style: inherit;">3</span>)</span>
   border-top-width: 0;
 }
 
-#dsrxbogeky .gt_heading {
+#ucuouyxuma .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -1404,13 +1404,13 @@ font-style: inherit;">3</span>)</span>
   border-right-color: #D3D3D3;
 }
 
-#dsrxbogeky .gt_bottom_border {
+#ucuouyxuma .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#dsrxbogeky .gt_col_headings {
+#ucuouyxuma .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1425,7 +1425,7 @@ font-style: inherit;">3</span>)</span>
   border-right-color: #D3D3D3;
 }
 
-#dsrxbogeky .gt_col_heading {
+#ucuouyxuma .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1445,7 +1445,7 @@ font-style: inherit;">3</span>)</span>
   overflow-x: hidden;
 }
 
-#dsrxbogeky .gt_column_spanner_outer {
+#ucuouyxuma .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1457,15 +1457,15 @@ font-style: inherit;">3</span>)</span>
   padding-right: 4px;
 }
 
-#dsrxbogeky .gt_column_spanner_outer:first-child {
+#ucuouyxuma .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#dsrxbogeky .gt_column_spanner_outer:last-child {
+#ucuouyxuma .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#dsrxbogeky .gt_column_spanner {
+#ucuouyxuma .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #000000;
@@ -1477,11 +1477,11 @@ font-style: inherit;">3</span>)</span>
   width: 100%;
 }
 
-#dsrxbogeky .gt_spanner_row {
+#ucuouyxuma .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#dsrxbogeky .gt_group_heading {
+#ucuouyxuma .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1507,7 +1507,7 @@ font-style: inherit;">3</span>)</span>
   text-align: left;
 }
 
-#dsrxbogeky .gt_empty_group_heading {
+#ucuouyxuma .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1522,15 +1522,15 @@ font-style: inherit;">3</span>)</span>
   vertical-align: middle;
 }
 
-#dsrxbogeky .gt_from_md > :first-child {
+#ucuouyxuma .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#dsrxbogeky .gt_from_md > :last-child {
+#ucuouyxuma .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#dsrxbogeky .gt_row {
+#ucuouyxuma .gt_row {
   padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 5px;
@@ -1549,7 +1549,7 @@ font-style: inherit;">3</span>)</span>
   overflow-x: hidden;
 }
 
-#dsrxbogeky .gt_stub {
+#ucuouyxuma .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1562,7 +1562,7 @@ font-style: inherit;">3</span>)</span>
   padding-right: 5px;
 }
 
-#dsrxbogeky .gt_stub_row_group {
+#ucuouyxuma .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -1576,15 +1576,15 @@ font-style: inherit;">3</span>)</span>
   vertical-align: top;
 }
 
-#dsrxbogeky .gt_row_group_first td {
+#ucuouyxuma .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#dsrxbogeky .gt_row_group_first th {
+#ucuouyxuma .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#dsrxbogeky .gt_summary_row {
+#ucuouyxuma .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1594,16 +1594,16 @@ font-style: inherit;">3</span>)</span>
   padding-right: 5px;
 }
 
-#dsrxbogeky .gt_first_summary_row {
+#ucuouyxuma .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#dsrxbogeky .gt_first_summary_row.thick {
+#ucuouyxuma .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#dsrxbogeky .gt_last_summary_row {
+#ucuouyxuma .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1613,7 +1613,7 @@ font-style: inherit;">3</span>)</span>
   border-bottom-color: #D3D3D3;
 }
 
-#dsrxbogeky .gt_grand_summary_row {
+#ucuouyxuma .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1623,7 +1623,7 @@ font-style: inherit;">3</span>)</span>
   padding-right: 5px;
 }
 
-#dsrxbogeky .gt_first_grand_summary_row {
+#ucuouyxuma .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1633,7 +1633,7 @@ font-style: inherit;">3</span>)</span>
   border-top-color: #D3D3D3;
 }
 
-#dsrxbogeky .gt_last_grand_summary_row_top {
+#ucuouyxuma .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1643,11 +1643,11 @@ font-style: inherit;">3</span>)</span>
   border-bottom-color: #D3D3D3;
 }
 
-#dsrxbogeky .gt_striped {
+#ucuouyxuma .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#dsrxbogeky .gt_table_body {
+#ucuouyxuma .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1656,7 +1656,7 @@ font-style: inherit;">3</span>)</span>
   border-bottom-color: #D3D3D3;
 }
 
-#dsrxbogeky .gt_footnotes {
+#ucuouyxuma .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1670,7 +1670,7 @@ font-style: inherit;">3</span>)</span>
   border-right-color: #D3D3D3;
 }
 
-#dsrxbogeky .gt_footnote {
+#ucuouyxuma .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1679,7 +1679,7 @@ font-style: inherit;">3</span>)</span>
   padding-right: 5px;
 }
 
-#dsrxbogeky .gt_sourcenotes {
+#ucuouyxuma .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1693,7 +1693,7 @@ font-style: inherit;">3</span>)</span>
   border-right-color: #D3D3D3;
 }
 
-#dsrxbogeky .gt_sourcenote {
+#ucuouyxuma .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1701,72 +1701,72 @@ font-style: inherit;">3</span>)</span>
   padding-right: 5px;
 }
 
-#dsrxbogeky .gt_left {
+#ucuouyxuma .gt_left {
   text-align: left;
 }
 
-#dsrxbogeky .gt_center {
+#ucuouyxuma .gt_center {
   text-align: center;
 }
 
-#dsrxbogeky .gt_right {
+#ucuouyxuma .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#dsrxbogeky .gt_font_normal {
+#ucuouyxuma .gt_font_normal {
   font-weight: normal;
 }
 
-#dsrxbogeky .gt_font_bold {
+#ucuouyxuma .gt_font_bold {
   font-weight: bold;
 }
 
-#dsrxbogeky .gt_font_italic {
+#ucuouyxuma .gt_font_italic {
   font-style: italic;
 }
 
-#dsrxbogeky .gt_super {
+#ucuouyxuma .gt_super {
   font-size: 65%;
 }
 
-#dsrxbogeky .gt_footnote_marks {
+#ucuouyxuma .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#dsrxbogeky .gt_asterisk {
+#ucuouyxuma .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#dsrxbogeky .gt_indent_1 {
+#ucuouyxuma .gt_indent_1 {
   text-indent: 5px;
 }
 
-#dsrxbogeky .gt_indent_2 {
+#ucuouyxuma .gt_indent_2 {
   text-indent: 10px;
 }
 
-#dsrxbogeky .gt_indent_3 {
+#ucuouyxuma .gt_indent_3 {
   text-indent: 15px;
 }
 
-#dsrxbogeky .gt_indent_4 {
+#ucuouyxuma .gt_indent_4 {
   text-indent: 20px;
 }
 
-#dsrxbogeky .gt_indent_5 {
+#ucuouyxuma .gt_indent_5 {
   text-indent: 25px;
 }
 
-#dsrxbogeky .katex-display {
+#ucuouyxuma .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#dsrxbogeky div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#ucuouyxuma div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
